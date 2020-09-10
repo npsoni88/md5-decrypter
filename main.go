@@ -9,15 +9,7 @@ import (
 	"gopkg.in/yaml.v2"
 )
 
-const (
-	host     = "localhost"
-	port     = 5432
-	user     = "postgres"
-	password = "password"
-	dbname   = "mydb"
-)
-
-// Config struct for webapp config
+// Config struct for database config
 type Config struct {
 	Database struct {
 		Host     string `yaml:"host"`
